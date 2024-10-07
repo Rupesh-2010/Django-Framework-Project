@@ -20,8 +20,10 @@ from Django import views
 
 urlpatterns = [
     path('admin-panel/', admin.site.urls),
-    path('About-Us/',views.AboutUs),
+    path('',views.HomePage),
+    path('About-Us/',views.AboutUs), #url for About us
     path('contact/',views.contact),
-
+    path('contact/<contactid>', views.contactDetails),#int,str,slug #ek page varun dusarya page var jata yetay
+    
 ]
 
