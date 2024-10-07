@@ -6,13 +6,14 @@ def HomePage(request):
         'title' : 'Home Page',
         'BData' : 'Welcome Rupesh.',
         'CList' : ['PHP','PYTHON','JS'],
+        'Num' : [10,20,30,40,50,44,32],
         'Student_Num' : [
             {'Name': 'Rupesh', 'Phone': 7083323315},
             {'Name': 'Anjali', 'Phone': 9552425195}
             ]
     }
 
-    return render(request, "index.html", data)
+    return render(request, "index.html")
 
 def AboutUs(request):
     return HttpResponse("<b>Welcome To My Website</b>")

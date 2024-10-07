@@ -13,12 +13,13 @@
     </style>
 </head>
 <body>
-    {% for n in CList %}
+    {% comment %} {% for n in CList %} {% endcomment %}
     {% comment %} <div>{{n}}</div> <!---- लिस्ट  प्रिंट करेल--> {% endcomment %}
-    <div>{{forloop.counter}}{{n}}</div>  <!--op च्या पहिलं index  num येतोय -->
-    
+    {% comment %} {% if n > 20%} {% endcomment %}
+    {% comment %} <div>{{forloop.counter}}{{n}}</div> {% endcomment %}
+    {% comment %} {% endif %} {% endcomment %}
+    {% comment %} {% endfor %} {% endcomment %}
 
 
-    {% endfor %}
 </body>
 </html>
