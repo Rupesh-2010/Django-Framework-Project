@@ -5,7 +5,11 @@ def HomePage(request):
     data= {
         'title' : 'Home Page',
         'BData' : 'Welcome Rupesh.',
-        'CList' : ['PHP','JAVA','PYTHON','JS']
+        'CList' : ['PHP','PYTHON','JS'],
+        'Student_Num' : [
+            {'Name': 'Rupesh', 'Phone': 7083323315},
+            {'Name': 'Anjali', 'Phone': 9552425195}
+            ]
     }
 
     return render(request, "index.html", data)

@@ -13,7 +13,12 @@
     </style>
 </head>
 <body>
-    <div class="main">{{BData}} {{CList}}</div>
+    {% for n in CList %}
+    {% comment %} <div>{{n}}</div> <!---- लिस्ट  प्रिंट करेल--> {% endcomment %}
+    <div>{{forloop.counter}}{{n}}</div>  <!--op च्या पहिलं index  num येतोय -->
     
+
+
+    {% endfor %}
 </body>
 </html>
