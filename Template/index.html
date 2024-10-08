@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{title}}</title>
-    <style>
-        .main {
-            width: 1000px;
-            background-color: skyblue;
-            color: black;
-            padding; 20px;
-            font-size:50px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    {% comment %} {% for n in CList %} {% endcomment %}
-    {% comment %} <div>{{n}}</div> <!---- लिस्ट  प्रिंट करेल--> {% endcomment %}
-    {% comment %} {% if n > 20%} {% endcomment %}
-    {% comment %} <div>{{forloop.counter}}{{n}}</div> {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
-    {% comment %} {% endfor %} {% endcomment %}
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="#">Home</a> | 
+            <a href="#">About</a> | 
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>This is a simple homepage designed using HTML and CSS. It contains a header, a footer, and some content in between.</p>
+        </section>
 
+        <section>
+            <h2>What We Offer</h2>
+            <p>Our website provides various resources, tutorials, and guides to help you learn and grow in your field of interest. Stay tuned for updates!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
