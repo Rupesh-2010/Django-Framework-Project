@@ -15,6 +15,9 @@ def HomePage(request):
 
     return render(request, "contact")
 
+def contact(request):
+    return HttpResponse("index.html")
+
 def AboutUs(request):
     return HttpResponse("<b>Welcome To My Website</b>")
 
